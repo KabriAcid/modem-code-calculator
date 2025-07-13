@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modem Unlock Code Calculator</title>
+    <!-- water.css light theme -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/water.css@2/out/light.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Huawei Modem Unlock Code Calculator (V1)</h1>
+      <form id="calculatorForm">
+        <label for="imei">Enter IMEI (15 digits):</label>
+        <input
+          type="text"
+          id="imei"
+          maxlength="15"
+          required
+          pattern="\d{15}"
+          placeholder="Enter IMEI"
+        />
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
